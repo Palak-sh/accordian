@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:minHeight="70dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linear_layout">
+
+
+ <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+     <Button
+         android:id="@+id/btndelete"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_weight="0"
+         android:layout_marginTop="10dp"
+         android:text="Delete" />
+
+     <TextView
+         android:id="@+id/itemTv"
+         android:layout_width="wrap_content"
+         android:layout_height="70dp"
+         android:layout_gravity="center"
+         android:gravity="center"
+         android:text="Movies"
+         android:layout_weight="3"
+         android:textColor="@color/purple_700"
+         android:textSize="18sp"
+         android:textStyle="bold"
+         android:layout_marginLeft="10dp"
+
+         />
+
+     <!--<CheckBox android:id="@+id/chkbx"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_weight="0"
+         android:layout_marginTop="10dp"
+        />-->
+    <!-- <Button
+         android:id="@+id/add"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_weight="0"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="10dp"
+         android:text="ADD" />-->
+
+
+     <ImageView
+         android:id="@+id/arro_imageview"
+         android:layout_width="30dp"
+         android:layout_height="30dp"
+         android:layout_marginTop="20dp"
+         android:layout_weight="0"
+         android:layout_marginEnd="16dp"
+         android:src="@drawable/downarrow"
+          />
+ </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/expandable_layout">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/child_rv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
